@@ -1,0 +1,10 @@
+<div class="grid-container">
+  <div class="left">
+    <app-user-details class="details" [user]="user"></app-user-details>
+    <app-gallery class="gallery" [albums]="userAlbums"></app-gallery>
+  </div>
+  <span class="spacer"></span>
+  <div class="right">
+    <app-posts class="posts" [posts]="userPosts"></app-posts>
+  </div>
+</div>

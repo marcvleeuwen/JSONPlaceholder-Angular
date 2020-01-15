@@ -1,0 +1,32 @@
+.grid-container {
+  margin: 24px;
+  display: flex;
+
+  .right {
+    flex: 1;
+    max-height: 50%;
+  }
+
+  .spacer {
+    flex: .25;
+  }
+
+  .left {
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+.details {
+  margin: 0 24px;
+}
+
+.posts {
+  flex: 1;
+}
+
+.gallery {
+  flex: 1;
+  margin: 24px 0 0 0;
+}
+

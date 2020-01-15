@@ -1,0 +1,15 @@
+<mat-card id="userDetailsCard">
+  <mat-card-content>
+    <h1 class="name">{{user?.name}}</h1>
+    <h3 class="username">{{user?.username}}</h3>
+    <a href="mailto:{{user?.email}}">
+      <mat-icon>email</mat-icon>
+      {{user?.email}}</a>
+    <a href="tel:{{user?.phone}}">
+      <mat-icon>phone</mat-icon>
+      {{user?.phone}}</a>
+    <a href="{{user?.website}}" target="_blank">
+      <mat-icon>open_in_new</mat-icon>
+      {{user?.website}}</a>
+  </mat-card-content>
+</mat-card>

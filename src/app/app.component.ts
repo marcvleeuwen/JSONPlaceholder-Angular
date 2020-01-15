@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'gallery-mock';
+  constructor(private router: Router, private location: Location) {
+  }
+
+  public canNavigateBack(): boolean {
+    return this.router.url !== '/';
+  }
+
+  public goBack(): void {
+    this.location.back();
+  }
 }

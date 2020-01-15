@@ -1,0 +1,8 @@
+<div class="container">
+  <mat-card *ngFor="let album of albums">
+    <mat-card-content>
+      <div mat-card-avatar>{{getInitials(album?.title)}}</div>
+      <div class="title">{{album?.title}}</div>
+    </mat-card-content>
+  </mat-card>
+</div>

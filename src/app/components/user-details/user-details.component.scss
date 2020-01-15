@@ -1,0 +1,21 @@
+#userDetailsCard {
+  mat-card-content {
+    .name {
+      text-align: center;
+    }
+
+    .username {
+
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: unset;
+      text-decoration: none;
+      mat-icon {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

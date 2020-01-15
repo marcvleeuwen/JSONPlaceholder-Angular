@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  mat-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 15rem;
+  }
+}
+mat-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .mat-card-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cecece;
+
+    text-transform: uppercase;
+  }
+}
